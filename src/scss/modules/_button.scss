@@ -1,0 +1,67 @@
+.b-defi {
+  display: flex;
+  padding: 10px 33px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--maquette-1-green, #368734);
+  color: var(--maquette-1-White, #fff);
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+}
+
+.b-exercice {
+  display: flex;
+  height: 42px;
+  padding: 22px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--wireframe-white, #fff);
+  color: var(--bleu, #0f5fa6);
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+}
+
+.b-code {
+  color: var(--wireframe-white, #fff);
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  background: #79cae1;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.b-action-dossier {
+  color: var(--red, #f23927);
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+.b-right {
+  color: var(--vert-fonc, #137246);
+}
+
+.b-false {
+  text-align: right;
+}

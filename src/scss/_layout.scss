@@ -1,0 +1,51 @@
+.l-flex {
+  display: flex;
+  width: 1180px;
+  padding: 20px;
+  align-items: flex-start;
+  gap: 27px;
+}
+
+.l-nav {
+  margin-top: 30px;
+}
+
+.l-exercice {
+  margin-top: 69px;
+}
+
+.l-htwo {
+  display: flex;
+  width: 353px;
+  padding: 10px 18px;
+  align-items: center;
+  gap: 10px;
+}
+
+.l-bloc {
+  display: flex;
+  height: 335px;
+  padding: 60px 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.l-footer {
+  width: 1180px;
+  height: 271px;
+  flex-shrink: 0;
+  margin: 178px 132px 60px;
+  padding: 45px 50px;
+}
+
+.l-cadri {
+  margin-top: 117px;
+}
+
+.l-temps {
+  margin-top: 48px;
+}

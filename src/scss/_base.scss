@@ -17,6 +17,7 @@
 
 html {
   font-size: 16px;
+  font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -39,16 +40,31 @@ video {
   vertical-align: middle;
 }
 
-.row + .row {
-  margin-top: 16px;
+h2 {
+  color: var(--maquette-1-White, #fff);
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 0px 15px 0px 0px;
+  background: var(--bleu, #0f5fa6);
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+footer {
+  background: var(--maquette-1-orange, #f9b146);
+  color: #fff;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h4 {
+  color: var(--maquette-1-beige, #fcfaf0);
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 /* ====================================

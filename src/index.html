@@ -14,7 +14,12 @@
             <div class="b-help">
               <p>Besoins d'aide?</p>
             </div>
-            <div class="logo">
+            <div class="h-logo">
+              <img
+                src="img/logo.png"
+                alt="Le logo tatitotu"
+                class="h-tatitotu"
+              />
               <p class="sous-titre">Defis de conjugaison</p>
             </div>
           </div>
@@ -22,11 +27,11 @@
       </div>
     </header>
     <main>
-      <section class="nav">
+      <section class="nav l-nav">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <nav class="option">
+              <nav class="n-option">
                 <a href="">Classes</a>
                 <a href="">Groupes</a>
                 <a href="">Difficulté</a>
@@ -37,45 +42,190 @@
           </div>
         </div>
       </section>
-      <section class="exercice">
+      <section class="exercice l-exercice">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <div class="flex">
-                
+              <div class="flex l-flex">
+                <button class="b-defi">Sauvegarder mon défi</button>
+                <button class="b-exercice">Exercer</button>
+                <button class="b-exercice">Imprimer</button>
+                <div class="b-code">
+                  <a class="b-huit-code">code à 8 chiffres</a>
+                  <a class="b-charger-defi">charger mon défi</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="verbe">
-        <div class="container">
-          <div class="row">
-            <div class="col-5">verbe</div>
+      <section class="cardrillage l-cadri">
+        <section class="verbe-option">
+          <div class="container">
+            <div class="row">
+              <div class="col-5">
+                <h2 class="l-htwo">Mes verbes</h2>
+                <div class="bloc l-bloc">
+                  <a href="" class="b-action-dossier b-false">Tout supprimer</a>
+                  <form action="" class="verbe">
+                    <label for="verbe"></label>
+                    <input type="text" name="ajoutez un verbe" id="" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-6">
+                <h2 class="l-htwo">Mes options</h2>
+                <div class="bloc l-bloc">
+                  <form action="">
+                    <div class="question">
+                      <label for="">Nombre de question</label>
+                      <select name="country" id="country">
+                        <option value="CI">5</option>
+                        <option value="DI">10</option>
+                        <option value="VI">20</option>
+                        <option value="TR">30</option>
+                        <option value="QU">40</option>
+                        <option value="CIQ">50</option>
+                      </select>
+                    </div>
+                    <div>
+                      <p
+                        class="b-group"
+                        role="group"
+                        aria-label="groupe temps options"
+                      >
+                        <button type="button" class="btn btn-secondary">
+                          normal
+                        </button>
+                        <button type="button" class="btn btn-secondary">
+                          trouver mode + temps
+                        </button>
+                      </p>
+                    </div>
+                    <div class="impression">
+                      <label for=""> Options d'impression </label>
+                      <input type="checkbox" name="" id="" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="options">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">options</div>
+        </section>
+        <section class="temps l-temps">
+          <div class="container">
+            <div class="row">
+              <h2 class="t-temps l-htwo">Mes temps</h2>
+              <div class="bloc l-bloc">
+                <button class="b-action-dossier b-right">Tout cocher</button>
+                <button class="b-action-dossier b-false">Tout décocher</button>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div>
+                        <h3>Indicatif</h3>
+                        <form action="">
+                          <label for="">Présent</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Imparfait</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Futur</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Passé simple</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Passé composé</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Plus-que-parfait</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Futur antérieur</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Passé antérieur</label>
+                          <input type="checkbox" name="présent" id="" />
+                        </form>
+                      </div>
+                      <div>
+                        <h3>Impératif</h3>
+                        <form action="">
+                          <label for="">Présent</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Passé</label>
+                          <input type="checkbox" name="présent" id="" />
+                        </form>
+                      </div>
+                      <div>
+                        <h3>Participe</h3>
+                        <form action="">
+                          <label for="">Présent</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Passé</label>
+                          <input type="checkbox" name="présent" id="" />
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div>
+                        <h3>Subjonctif</h3>
+                        <form action="">
+                          <label for="">Présent</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Passé</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Imparfait</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Plus-que-parfait</label>
+                          <input type="checkbox" name="présent" id="" />
+                        </form>
+                      </div>
+                      <div>
+                        <h3>Conditionnel</h3>
+                        <form action="">
+                          <label for="">Présent</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Imparfait</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Plus-que-parfait</label>
+                          <input type="checkbox" name="présent" id="" />
+                        </form>
+                      </div>
+                      <div>
+                        <h3>Gérondif</h3>
+                        <form action="">
+                          <label for="">Présent</label>
+                          <input type="checkbox" name="présent" id="" />
+                          <label for="">Passé</label>
+                          <input type="checkbox" name="présent" id="" />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="temps">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">temps1</div>
-            <div class="col-6">temps2</div>
-          </div>
-        </div>
+        </section>
       </section>
     </main>
-    <footer>
+    <footer class="l-footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">footer nom</div>
-          <div class="col-6">biographie</div>
+          <div class="col-6">
+            <h4>Christophe Roulet</h4>
+          </div>
+          <div class="col-6">
+            <p>
+              Christophe Roulet est maitre de français et professeur de motion
+              design à eikon. Pour ses cours, il voulait trouver le site parfait
+              pour c’est élèves, mais parti bredouille. c’est pourquoi il a
+              décidé de faire lui même ce site, un site gratuit, sans publicité
+              et utile.
+            </p>
+          </div>
+          <div class="col-12">
+            <div class="contact">
+              <h5>contact</h5>
+              <a href="">christophe.roulet@edu-vd.ch</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

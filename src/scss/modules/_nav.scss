@@ -1,0 +1,20 @@
+.n-option {
+  color: white;
+  background: var(--maquette-1-pink, #ed70a4);
+  display: flex;
+  width: 1179px;
+  padding: 25px 478px 25px 20px;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.n-option > a {
+  color: var(--maquette-1-White, #fff);
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
