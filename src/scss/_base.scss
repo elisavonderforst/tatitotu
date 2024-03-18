@@ -50,6 +50,7 @@ h2 {
   text-transform: uppercase;
   border-radius: 0px 15px 0px 0px;
   background: var(--bleu, #0f5fa6);
+  box-shadow: 15px 10px 0px 0px #ed70a4;
 }
 
 footer {
@@ -60,6 +61,16 @@ footer {
   font-weight: 500;
 }
 
+h3 {
+  color: var(--bleu, #0f5fa6);
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 h4 {
   color: var(--maquette-1-beige, #fcfaf0);
   font-size: 24px;
@@ -67,6 +78,11 @@ h4 {
   text-transform: uppercase;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 /* ====================================
 // base rules
 // ==================================== */

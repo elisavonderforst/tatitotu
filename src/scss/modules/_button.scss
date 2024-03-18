@@ -1,3 +1,11 @@
+.b-help {
+  color: var(--bleu, #0f5fa6);
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .b-defi {
   display: flex;
   padding: 10px 33px;
@@ -33,7 +41,12 @@
   border: none;
 }
 
-.b-code {
+.b-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.b-charger-defi {
   color: var(--wireframe-white, #fff);
   font-family: "Helvetica Neue";
   font-size: 18px;
@@ -48,6 +61,10 @@
   gap: 10px;
 }
 
+.b-code {
+  display: flex;
+}
+
 .b-action-dossier {
   color: var(--red, #f23927);
   font-family: "Helvetica Neue";
@@ -56,6 +73,8 @@
   font-weight: 500;
   line-height: normal;
   text-align: left;
+  border: none;
+  background: none;
 }
 
 .b-right {
@@ -64,4 +83,32 @@
 
 .b-false {
   text-align: right;
+  margin-left: 20px;
+}
+
+.b-secondary {
+  color: var(--maquette-1-White, #fff);
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  background: #79cae1;
+  padding: 12px 40px;
+  border: none;
+}
+
+.b-charger-defi:active,
+.b-secondary:hover {
+  color: var(--maquette-1-green-80, rgba(54, 135, 52, 0.6));
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  outline: 4px solid var(--maquette-1-cyan, #79cae1);
+  outline-offset: -4px;
+  background: var(--wireframe-white, #fff);
 }

@@ -11,7 +11,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="b-help">
+            <div class="b-help l-help">
               <p>Besoins d'aide?</p>
             </div>
             <div class="h-logo">
@@ -20,7 +20,7 @@
                 alt="Le logo tatitotu"
                 class="h-tatitotu"
               />
-              <p class="sous-titre">Defis de conjugaison</p>
+              <p class="h-sous-titre">Defis de conjugaison</p>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <nav class="n-option">
+              <nav class="n-option f-option">
                 <a href="">Classes</a>
                 <a href="">Groupes</a>
                 <a href="">Difficulté</a>
@@ -46,12 +46,19 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <div class="flex l-flex">
+              <div class="flex-button l-flex">
                 <button class="b-defi">Sauvegarder mon défi</button>
                 <button class="b-exercice">Exercer</button>
                 <button class="b-exercice">Imprimer</button>
                 <div class="b-code">
-                  <a class="b-huit-code">code à 8 chiffres</a>
+                  <form action="" class="code">
+                    <input
+                      class="in-code"
+                      type="number"
+                      max="8"
+                      placeholder="code à 8 chiffres"
+                    />
+                  </form>
                   <a class="b-charger-defi">charger mon défi</a>
                 </div>
               </div>
@@ -66,10 +73,18 @@
               <div class="col-5">
                 <h2 class="l-htwo">Mes verbes</h2>
                 <div class="bloc l-bloc">
-                  <a href="" class="b-action-dossier b-false">Tout supprimer</a>
+                  <button class="b-action-dossier b-false">
+                    Tout supprimer
+                  </button>
                   <form action="" class="verbe">
                     <label for="verbe"></label>
-                    <input type="text" name="ajoutez un verbe" id="" />
+                    <input
+                      class="in-verbe"
+                      type="text"
+                      name="ajoutez un verbe"
+                      placeholder="Ajoutez un verbe"
+                      id=""
+                    />
                   </form>
                 </div>
               </div>
@@ -77,9 +92,9 @@
                 <h2 class="l-htwo">Mes options</h2>
                 <div class="bloc l-bloc">
                   <form action="">
-                    <div class="question">
+                    <div class="f-question question l-question">
                       <label for="">Nombre de question</label>
-                      <select name="country" id="country">
+                      <select class="b-select" name="country" id="country">
                         <option value="CI">5</option>
                         <option value="DI">10</option>
                         <option value="VI">20</option>
@@ -94,17 +109,17 @@
                         role="group"
                         aria-label="groupe temps options"
                       >
-                        <button type="button" class="btn btn-secondary">
+                        <button type="button" class="b-secondary l-secondary">
                           normal
                         </button>
-                        <button type="button" class="btn btn-secondary">
+                        <button type="button" class="b-secondary l-secondary">
                           trouver mode + temps
                         </button>
                       </p>
                     </div>
                     <div class="impression">
                       <label for=""> Options d'impression </label>
-                      <input type="checkbox" name="" id="" />
+                      <input type="radio" name="" id="" />
                     </div>
                   </form>
                 </div>
@@ -115,86 +130,100 @@
         <section class="temps l-temps">
           <div class="container">
             <div class="row">
-              <h2 class="t-temps l-htwo">Mes temps</h2>
-              <div class="bloc l-bloc">
-                <button class="b-action-dossier b-right">Tout cocher</button>
-                <button class="b-action-dossier b-false">Tout décocher</button>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6">
-                      <div>
-                        <h3>Indicatif</h3>
-                        <form action="">
-                          <label for="">Présent</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Imparfait</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Futur</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Passé simple</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Passé composé</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Plus-que-parfait</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Futur antérieur</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Passé antérieur</label>
-                          <input type="checkbox" name="présent" id="" />
-                        </form>
+              <div class="col-10">
+                <h2 class="t-temps l-htwo">Mes temps</h2>
+                <div class="bloc l-bloc">
+                  <div class="f-b-temps">
+                    <button class="b-action-dossier b-right">
+                      Tout cocher
+                    </button>
+                    <button class="b-action-dossier b-false">
+                      Tout décocher
+                    </button>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="text-temps">
+                          <div>
+                            <h3>Indicatif</h3>
+                            <div class="f-temps">
+                              <form action="">
+                                <label for="">Présent</label>
+                                <input type="checkbox" name="présent" id="" />
+                                <label for="">Imparfait</label>
+                                <input type="checkbox" name="présent" id="" />
+                                <label for="">Futur</label>
+                                <input type="checkbox" name="présent" id="" />
+                                <label for="">Passé simple</label>
+                                <input type="checkbox" name="présent" id="" />
+                                <label for="">Passé composé</label>
+                                <input type="checkbox" name="présent" id="" />
+                                <label for="">Plus-que-parfait</label>
+                                <input type="checkbox" name="présent" id="" />
+                                <label for="">Futur antérieur</label>
+                                <input type="checkbox" name="présent" id="" />
+                                <label for="">Passé antérieur</label>
+                                <input type="checkbox" name="présent" id="" />
+                              </form>
+                            </div>
+                          </div>
+                          <div>
+                            <h3>Impératif</h3>
+                            <form action="">
+                              <label for="">Présent</label>
+                              <input type="checkbox" name="présent" id="" />
+                              <label for="">Passé</label>
+                              <input type="checkbox" name="présent" id="" />
+                            </form>
+                          </div>
+                          <div>
+                            <h3>Participe</h3>
+                            <form action="">
+                              <label for="">Présent</label>
+                              <input type="checkbox" name="présent" id="" />
+                              <label for="">Passé</label>
+                              <input type="checkbox" name="présent" id="" />
+                            </form>
+                          </div>
+                        </div>
                       </div>
-                      <div>
-                        <h3>Impératif</h3>
-                        <form action="">
-                          <label for="">Présent</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Passé</label>
-                          <input type="checkbox" name="présent" id="" />
-                        </form>
-                      </div>
-                      <div>
-                        <h3>Participe</h3>
-                        <form action="">
-                          <label for="">Présent</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Passé</label>
-                          <input type="checkbox" name="présent" id="" />
-                        </form>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div>
-                        <h3>Subjonctif</h3>
-                        <form action="">
-                          <label for="">Présent</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Passé</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Imparfait</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Plus-que-parfait</label>
-                          <input type="checkbox" name="présent" id="" />
-                        </form>
-                      </div>
-                      <div>
-                        <h3>Conditionnel</h3>
-                        <form action="">
-                          <label for="">Présent</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Imparfait</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Plus-que-parfait</label>
-                          <input type="checkbox" name="présent" id="" />
-                        </form>
-                      </div>
-                      <div>
-                        <h3>Gérondif</h3>
-                        <form action="">
-                          <label for="">Présent</label>
-                          <input type="checkbox" name="présent" id="" />
-                          <label for="">Passé</label>
-                          <input type="checkbox" name="présent" id="" />
-                        </form>
+                      <div class="col-6">
+                        <div class="text-temps">
+                          <div>
+                            <h3>Subjonctif</h3>
+                            <form action="">
+                              <label for="">Présent</label>
+                              <input type="checkbox" name="présent" id="" />
+                              <label for="">Passé</label>
+                              <input type="checkbox" name="présent" id="" />
+                              <label for="">Imparfait</label>
+                              <input type="checkbox" name="présent" id="" />
+                              <label for="">Plus-que-parfait</label>
+                              <input type="checkbox" name="présent" id="" />
+                            </form>
+                          </div>
+                          <div>
+                            <h3>Conditionnel</h3>
+                            <form action="">
+                              <label for="">Présent</label>
+                              <input type="checkbox" name="présent" id="" />
+                              <label for="">Imparfait</label>
+                              <input type="checkbox" name="présent" id="" />
+                              <label for="">Plus-que-parfait</label>
+                              <input type="checkbox" name="présent" id="" />
+                            </form>
+                          </div>
+                          <div>
+                            <h3>Gérondif</h3>
+                            <form action="">
+                              <label for="">Présent</label>
+                              <input type="checkbox" name="présent" id="" />
+                              <label for="">Passé</label>
+                              <input type="checkbox" name="présent" id="" />
+                            </form>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -221,8 +250,8 @@
             </p>
           </div>
           <div class="col-12">
-            <div class="contact">
-              <h5>contact</h5>
+            <div class="contact l-contact">
+              <p>contact</p>
               <a href="">christophe.roulet@edu-vd.ch</a>
             </div>
           </div>
