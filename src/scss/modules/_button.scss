@@ -1,9 +1,14 @@
 .b-help {
+  position: absolute;
   color: var(--bleu, #0f5fa6);
+  background: white;
   font-family: "Helvetica Neue";
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 11px 45px;
+  top: 23px;
+  left: 160;
 }
 
 .b-defi {
@@ -111,4 +116,8 @@
   outline: 4px solid var(--maquette-1-cyan, #79cae1);
   outline-offset: -4px;
   background: var(--wireframe-white, #fff);
+}
+
+.b-exercice:active {
+  outline: 3px solid var(--bleu, #0f5fa6);
 }

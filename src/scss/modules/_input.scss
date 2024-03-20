@@ -3,15 +3,11 @@
   color: var(--maquette-1-green-80, rgba(54, 135, 52));
   font-family: "Helvetica Neue";
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
   background: white;
   padding: 10px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+
   border: none;
 }
 
@@ -42,7 +38,6 @@ select {
 
 .in-verbe {
   border: 4px solid var(--bleu, #0f5fa6);
-  background: var(--maquette-1-White, #fff);
 }
 
 input[type="checkbox"] {
@@ -52,15 +47,13 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  /* Style de la case à cocher */
   border: 3px solid palevioletred;
   cursor: pointer;
 }
-/* Style pour la case à cocher cochée */
+
 input[type="checkbox"]:checked {
   background-color: palevioletred;
 }
-/* Style pour l'étiquette associée à la case à cocher */
 label {
   padding-right: 60px;
 }
