@@ -1,6 +1,6 @@
 .n-option {
   color: white;
-  background: var(--maquette-1-pink, #ed70a4);
+  background: var(--pink);
   display: flex;
   padding: 25px 478px 25px 20px;
   align-items: flex-start;
@@ -11,24 +11,57 @@
   position: relative;
 }
 
+.n-middle-child {
+  position: relative;
+}
+
+.n-child-flex,
 .n-child {
   position: absolute;
   display: flex;
   flex-direction: column;
-  color: var(--bleu, #0f5fa6);
-  font-family: "Helvetica Neue";
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
   opacity: 0;
 }
 
-.n-child button {
-  background: none;
-  border: 2px solid var(--maquette-1-yellow, #ffdc5e);
-  background: var(--maquette-1-White, #fff);
+.n-child-flex {
+  pointer-events: none;
+  width: 333px;
+  height: 33px;
 }
 
-.n-parent > a:hover > .n-child {
+.n-child-flex button {
+  background: none;
+  border: 2px solid var(--yellow);
+  background: var(--white);
+  color: var(--bleu);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.n-parent:hover .n-child-flex {
   opacity: 1;
+  pointer-events: all;
+}
+
+.n-middle-child:hover .n-child {
+  opacity: 1;
+  left: 40px;
+  top: 0px;
+}
+
+.n-neuf-h {
+  padding-right: 8px;
+}
+
+.n-middle-child:hover .n-child-co {
+  opacity: 1;
+  left: 50px;
+  top: 0px;
+}
+
+.n-child-flex:hover {
+  text-decoration: underline;
 }
