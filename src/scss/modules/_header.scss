@@ -1,4 +1,4 @@
-.h-logo {
+.header-logo {
   background: var(--orange);
   padding: 65px;
   color: var(--white);
@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-.h-logo > img {
+.header-logo > img {
   width: 458px;
 }
 
-.h-sous-titre {
+.header-subtitle {
   color: var(--white);
   font-size: 20px;
   font-weight: 700;

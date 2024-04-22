@@ -1,11 +1,11 @@
-.bloc {
+.section-bloc {
   outline: 18px solid var(--bleu);
   outline-offset: -18px;
   background: var(--white);
   box-shadow: 15px 10px 0px 0px var(--pink);
 }
 
-.bloc > form > input {
+.section-bloc > form > input {
   margin-top: 19px;
 }
 
@@ -29,7 +29,7 @@
   font-weight: 500;
 }
 
-.cardrillage {
+.section-cardrillage {
   background-image: url(../img/cadrillage.png);
   padding: 60px;
   margin: 0 44px;

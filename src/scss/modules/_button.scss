@@ -46,6 +46,12 @@
   border: none;
 }
 
+.button-box {
+  background: var(--pink);
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .button-exercice:active {
   outline: 4px solid var(--orange);
   outline-offset: -2px;
@@ -89,8 +95,8 @@
   margin-right: 20px;
 }
 
-.button-false {
-  float: right;
+.button-coche {
+  margin-right: 10px;
 }
 
 .button-secondary {

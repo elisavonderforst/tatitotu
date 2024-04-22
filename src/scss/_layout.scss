@@ -1,27 +1,27 @@
-.l-flex {
+.layout-nav {
+  margin-top: 30px;
+}
+
+.layout-box {
   display: flex;
   padding: 20px;
   align-items: flex-start;
   gap: 27px;
 }
 
-.l-nav {
-  margin-top: 30px;
-}
-
-.l-exercice {
+.layout-exercice {
   margin-top: 69px;
   margin-bottom: 50px;
 }
 
-.l-htwo {
+.layout-title-blue {
   display: flex;
   width: 353px;
   padding: 10px 18px;
   align-items: center;
 }
 
-.l-bloc {
+.layout-bloc {
   display: flex;
   padding: 60px 50px;
   flex-direction: column;
@@ -30,30 +30,32 @@
   align-self: stretch;
 }
 
-.l-footer {
+.layout-footer {
   margin: 178px 132px 60px;
   padding: 45px 50px;
 }
 
-.l-cadri {
+.layout-cadri {
   margin-top: 117px;
 }
 
-.l-temps {
+.layout-temps {
   margin-top: 48px;
 }
 
-.l-contact {
+.layout-contact {
   padding-top: 60px;
 }
 
-.l-secondary {
+.layout-secondary {
   display: flex;
   padding: 12px 15px;
   align-items: center;
   gap: 31px;
 }
 
-.l-question {
+.layout-question {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
 }

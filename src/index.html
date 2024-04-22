@@ -11,27 +11,27 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="button-help l-help">
+            <div class="button-help">
               <p>Besoins d'aide ?</p>
             </div>
-            <div class="h-logo">
+            <div class="header-logo">
               <img
                 src="img/logo.png"
                 alt="Le logo tatitotu"
-                class="h-tatitotu"
+                class="header-tatitotu"
               />
-              <p class="h-sous-titre">Defis de conjugaison</p>
+              <p class="header-subtitle">Defis de conjugaison</p>
             </div>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="nav l-nav">
+      <section class="nav layout-nav">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <nav class="n-option f-option">
+              <nav class="n-option">
                 <div class="hover">
                   <div class="n-parent">
                     <a href="">Primaire</a>
@@ -165,18 +165,18 @@
           </div>
         </div>
       </section>
-      <section class="exercice l-exercice">
+      <section class="exercice layout-exercice">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <div class="flex-button l-flex">
+              <div class="button-box layout-box">
                 <button class="button-defi">Sauvegarder mon défi</button>
-                <button class="button-exercice button-exercer">Exercer</button>
+                <button class="button-exercice button-train">Exercer</button>
                 <button class="button-exercice">Imprimer</button>
                 <div class="button-code">
                   <form action="" class="code">
                     <input
-                      class="in-code"
+                      class="input-code"
                       type="number"
                       max="8"
                       placeholder="code à 8 chiffres"
@@ -190,22 +190,20 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <div class="exercer-popup">
-                  <div class="exercer-bloc">
-                    <img class="exercer-img-croix" src="img/croix.png" alt="" />
-                    <div class="exercer-barre-charge">
-                      <p class="exercer-score">1/20</p>
-                      <p class="exercer-barre"></p>
+                <div class="train-popup">
+                  <div class="train-bloc">
+                    <img class="train-img-croix" src="img/croix.png" alt="" />
+                    <div class="train-barre-charge">
+                      <p class="train-score">1/20</p>
+                      <p class="train-barre"></p>
                     </div>
-                    <div class="exercer-text">
-                      <p class="exercer-verbe">
-                        tu / être / future (indicatif)
-                      </p>
-                      <div class="exercer-input">
-                        <form class="exercer-form" action="">
+                    <div class="train-text">
+                      <p class="train-verbe">tu / être / future (indicatif)</p>
+                      <div class="train-input">
+                        <form class="train-form" action="">
                           <input type="text" />
                         </form>
-                        <a class="exercer-button">Vérifier</a>
+                        <a class="train-button">Vérifier</a>
                       </div>
                     </div>
                   </div>
@@ -215,19 +213,17 @@
           </div>
         </div>
       </section>
-      <section class="cardrillage l-cadri">
-        <section class="verbe-option">
+      <section class="section-cardrillage">
+        <section>
           <div class="container">
             <div class="row">
               <div class="col-5">
-                <h2 class="l-htwo">Mes verbes</h2>
-                <div class="bloc l-bloc">
-                  <button class="button-action-dossier button-false">
-                    Tout supprimer
-                  </button>
+                <h2 class="layout-title-blue">Mes verbes</h2>
+                <div class="section-bloc layout-bloc">
+                  <button class="button-action-dossier">Tout supprimer</button>
                   <form action="" class="verbe">
                     <input
-                      class="in-verbe"
+                      class="input-verbe"
                       type="text"
                       name="ajoutez un verbe"
                       placeholder="Ajoutez un verbe"
@@ -237,10 +233,10 @@
                 </div>
               </div>
               <div class="col-6 offset-1">
-                <h2 class="l-htwo">Mes options</h2>
-                <div class="bloc l-bloc">
+                <h2 class="layout-title-blue">Mes options</h2>
+                <div class="section-bloc layout-bloc">
                   <form action="">
-                    <div class="f-question question l-question">
+                    <div class="question layout-question">
                       <label for="">Nombre de question</label>
                       <select class="button-select" name="number" id="">
                         <option value="CI">5</option>
@@ -259,27 +255,27 @@
                       >
                         <button
                           type="button"
-                          class="button-secondary l-secondary"
+                          class="button-secondary layout-secondary"
                         >
                           normal
                         </button>
                         <button
                           type="button"
-                          class="button-secondary l-secondary"
+                          class="button-secondary layout-secondary"
                         >
                           trouver mode + temps
                         </button>
                       </p>
                     </div>
                     <div class="impression">
-                      <label class="in-switch">
+                      <label class="input-switch">
                         Options d'impression
                         <input
-                          class="in-button-switch-wrapper"
+                          class="input-button-switch-wrapper"
                           type="checkbox"
                         />
-                        <div class="in-switch-wrapper">
-                          <div class="in-switch-inner"></div>
+                        <div class="input-switch-wrapper">
+                          <div class="input-switch-inner"></div>
                         </div>
                       </label>
                     </div>
@@ -289,18 +285,21 @@
             </div>
           </div>
         </section>
-        <section class="temps l-temps">
+        <section class="temps layout-temps">
           <div class="container">
             <div class="row">
               <div class="col-10 offset-1">
-                <h2 class="t-temps l-htwo">Mes temps</h2>
-                <div class="bloc l-bloc">
-                  <div class="f-button-temps">
-                    <button class="button-action-dossier button-right">
-                      Tout cocher
+                <h2 class="t-temps layout-title-blue">Mes temps</h2>
+                <div class="section-bloc layout-bloc">
+                  <div>
+                    <button
+                      class="button-action-dossier button-right"
+                      id="button-cocher"
+                    >
+                      <p class="check-all">Tout cocher</p>
                     </button>
-                    <button class="button-action-dossier button-false">
-                      Tout décocher
+                    <button class="button-action-dossier">
+                      <p class="uncheck-all">Tout décocher</p>
                     </button>
                   </div>
                   <div class="container">
@@ -309,41 +308,49 @@
                         <div class="text-temps">
                           <div>
                             <h3>Indicatif</h3>
-                            <div class="f-temps">
+                            <div>
                               <div class="row">
                                 <div class="col-6">
-                                  <form class="flex-verbe" action="">
+                                  <form action="">
                                     <div>
                                       <input
+                                        class="button-coche"
                                         type="checkbox"
                                         name="présent"
-                                        id=""
+                                        id="present-ind"
                                       />
-                                      <label for="">Présent</label>
+                                      <label for="present-ind">Présent</label>
                                     </div>
                                     <div>
                                       <input
+                                        class="button-coche"
                                         type="checkbox"
-                                        name="présent"
-                                        id=""
+                                        name="imparfait"
+                                        id="imparfait-ind"
                                       />
-                                      <label for="">Imparfait</label>
+                                      <label for="imparfait-ind"
+                                        >Imparfait</label
+                                      >
                                     </div>
                                     <div>
                                       <input
+                                        class="button-coche"
                                         type="checkbox"
-                                        name="présent"
-                                        id=""
+                                        name="futur"
+                                        id="futur-ind"
                                       />
-                                      <label for="">Futur</label>
+                                      <label for="futur-ind">Futur</label>
                                     </div>
                                     <div>
                                       <input
+                                        class="button-coche"
                                         type="checkbox"
-                                        name="présent"
-                                        id=""
+                                        name="passé simple"
+                                        id="passe-simple-ind"
                                       />
-                                      <label for="">Passé simple</label>
+                                      <label for="passe-simple-ind"
+                                        >Passé simple</label
+                                      >
                                     </div>
                                   </form>
                                 </div>
@@ -351,35 +358,47 @@
                                   <form class="flex-verbe" action="">
                                     <div>
                                       <input
+                                        class="button-coche"
                                         type="checkbox"
-                                        name="présent"
-                                        id=""
+                                        name="passé composé"
+                                        id="passe-comp-ind"
                                       />
-                                      <label for="">Passé composé</label>
+                                      <label for="passe-comp-ind"
+                                        >Passé composé</label
+                                      >
                                     </div>
                                     <div>
                                       <input
+                                        class="button-coche"
                                         type="checkbox"
-                                        name="présent"
-                                        id=""
+                                        name="plus-que-parfait"
+                                        id="pqp-ind"
                                       />
-                                      <label for="">Plus-que-parfait</label>
+                                      <label for="pqp-ind"
+                                        >Plus-que-parfait</label
+                                      >
                                     </div>
                                     <div>
                                       <input
+                                        class="button-coche"
                                         type="checkbox"
-                                        name="présent"
-                                        id=""
+                                        name="futur antérieur"
+                                        id="futur-ant-ind"
                                       />
-                                      <label for="">Futur antérieur</label>
+                                      <label for="futur-ant-ind"
+                                        >Futur antérieur</label
+                                      >
                                     </div>
                                     <div>
                                       <input
+                                        class="button-coche"
                                         type="checkbox"
-                                        name="présent"
-                                        id=""
+                                        name="passé antérieur"
+                                        id="passe-ant-ind"
                                       />
-                                      <label for="">Passé antérieur</label>
+                                      <label for="passe-ant-ind"
+                                        >Passé antérieur</label
+                                      >
                                     </div>
                                   </form>
                                 </div>
@@ -393,11 +412,12 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
                                       name="présent"
-                                      id=""
+                                      id="present-imperatif"
                                     />
-                                    <label for="">Présent</label>
+                                    <label for="passe-imperatif">Présent</label>
                                   </div>
                                 </form>
                               </div>
@@ -405,11 +425,12 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
-                                      name="présent"
-                                      id=""
+                                      name="passé"
+                                      id="passe-imperatif"
                                     />
-                                    <label for="">Passé</label>
+                                    <label for="present-imperatif">Passé</label>
                                   </div>
                                 </form>
                               </div>
@@ -422,11 +443,12 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
                                       name="présent"
-                                      id=""
+                                      id="present-part"
                                     />
-                                    <label for="">Présent</label>
+                                    <label for="present-part">Présent</label>
                                   </div>
                                 </form>
                               </div>
@@ -434,11 +456,12 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
-                                      name="présent"
-                                      id=""
+                                      name="passé"
+                                      id="passe-part"
                                     />
-                                    <label for="">Passé</label>
+                                    <label for="passe-part">Passé</label>
                                   </div>
                                 </form>
                               </div>
@@ -455,19 +478,21 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
                                       name="présent"
-                                      id=""
+                                      id="present-sub"
                                     />
-                                    <label for="">Présent</label>
+                                    <label for="present-sub">Présent</label>
                                   </div>
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
-                                      name="présent"
-                                      id=""
+                                      name="passé"
+                                      id="passe-t-sub"
                                     />
-                                    <label for="">Passé</label>
+                                    <label for="passe-sub">Passé</label>
                                   </div>
                                 </form>
                               </div>
@@ -475,19 +500,23 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
-                                      name="présent"
-                                      id=""
+                                      name="imparfait"
+                                      id="imparfait-sub"
                                     />
-                                    <label for="">Imparfait</label>
+                                    <label for="imparfait-sub">Imparfait</label>
                                   </div>
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
-                                      name="présent"
-                                      id=""
+                                      name="plus-que-parfait"
+                                      id="plq-sub"
                                     />
-                                    <label for="">Plus-que-parfait</label>
+                                    <label for="plq-sub"
+                                      >Plus-que-parfait</label
+                                    >
                                   </div>
                                 </form>
                               </div>
@@ -500,19 +529,23 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
                                       name="présent"
-                                      id=""
+                                      id="present-cond"
                                     />
-                                    <label for="">Présent</label>
+                                    <label for="present-cond">Présent</label>
                                   </div>
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
-                                      name="présent"
-                                      id=""
+                                      name="imparfait"
+                                      id="imparfait-cond"
                                     />
-                                    <label for="">Imparfait</label>
+                                    <label for="imparfait-cond"
+                                      >Imparfait</label
+                                    >
                                   </div>
                                 </form>
                               </div>
@@ -520,11 +553,14 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
-                                      name="présent"
-                                      id=""
+                                      name="plus-que-parfait"
+                                      id="pqp-cond"
                                     />
-                                    <label for="">Plus-que-parfait</label>
+                                    <label for="pqp-cond"
+                                      >Plus-que-parfait</label
+                                    >
                                   </div>
                                 </form>
                               </div>
@@ -537,11 +573,14 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
                                       name="présent"
-                                      id=""
+                                      id="present-gerondif"
                                     />
-                                    <label for="">Présent</label>
+                                    <label for="present-gerondif"
+                                      >Présent</label
+                                    >
                                   </div>
                                 </form>
                               </div>
@@ -549,11 +588,12 @@
                                 <form action="">
                                   <div>
                                     <input
+                                      class="button-coche"
                                       type="checkbox"
-                                      name="présent"
-                                      id=""
+                                      name="passé"
+                                      id="passe-gerondif"
                                     />
-                                    <label for="">Passé</label>
+                                    <label for="passe-gerondif">Passé</label>
                                   </div>
                                 </form>
                               </div>
@@ -570,7 +610,7 @@
         </section>
       </section>
     </main>
-    <footer class="l-footer">
+    <footer class="layout-footer">
       <div class="container">
         <div class="row">
           <div class="col-6">
