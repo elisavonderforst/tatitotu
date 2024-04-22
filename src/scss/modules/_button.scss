@@ -1,4 +1,4 @@
-.b-help {
+.button-help {
   position: fixed;
   color: var(--bleu);
   background: var(--white);
@@ -11,28 +11,27 @@
   box-shadow: 10px 10px 0px 0px var(--orange);
 }
 
-.b-help:hover {
+.button-help:hover {
   outline: 4px solid var(--orange);
   outline-offset: -4px;
 }
 
-.b-defi {
-  display: flex;
+.button-defi {
   padding: 10px 33px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   background: var(--green);
   color: var(--white);
   font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
   border: none;
+  font-weight: 600;
 }
 
-.b-exercice {
+.button-defi:active {
+  color: var(--green);
+  background: var(--white);
+}
+
+.button-exercice {
   display: flex;
   height: 42px;
   padding: 22px 21px;
@@ -40,40 +39,41 @@
   align-items: center;
   gap: 10px;
   background: var(--white);
-  color: var(--bleu, #0f5fa6);
+  color: var(--bleu);
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   text-transform: uppercase;
   border: none;
 }
 
-.b-group {
+.button-exercice:active {
+  outline: 4px solid var(--orange);
+  outline-offset: -2px;
+}
+
+.button-group {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
-.b-charger-defi {
+.button-charger-defi {
   color: var(--white);
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
-  background: #79cae1;
+  background: var(--cyan);
   padding: 10px 24px;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.b-code {
+.button-code {
   display: flex;
 }
 
-.b-action-dossier {
+.button-action-dossier {
   color: var(--red);
   font-size: 16px;
   font-style: normal;
@@ -84,40 +84,37 @@
   background: none;
 }
 
-.b-right {
-  color: var(--vert-fonc, #137246);
+.button-right {
+  color: var(--vert-fonce);
+  margin-right: 20px;
 }
 
-.b-false {
-  text-align: right;
-  margin-left: 20px;
+.button-false {
+  float: right;
 }
 
-.b-secondary {
-  color: var(--maquette-1-White, #fff);
+.button-secondary {
+  color: var(--white);
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
-  background: #79cae1;
+  background: var(--cyan);
   padding: 12px 40px;
   border: none;
 }
 
-.b-charger-defi:active,
-.b-secondary:hover {
-  color: var(--maquette-1-green-80, rgba(54, 135, 52, 0.6));
+.button-charger-defi:active,
+.button-secondary:hover {
+  color: var(--green-80);
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
   outline: 4px solid var(--cyan);
   outline-offset: -4px;
-  background: var(--wireframe-white, #fff);
+  background: var(--white);
 }
 
-.b-exercice:active {
-  outline: 3px solid var(--bleu, #0f5fa6);
+.button-exercice:active {
+  outline: 3px solid var(--bleu);
 }

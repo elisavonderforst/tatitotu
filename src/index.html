@@ -11,7 +11,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="b-help l-help">
+            <div class="button-help l-help">
               <p>Besoins d'aide ?</p>
             </div>
             <div class="h-logo">
@@ -170,10 +170,10 @@
           <div class="row">
             <div class="col-12">
               <div class="flex-button l-flex">
-                <button class="b-defi">Sauvegarder mon défi</button>
-                <button class="b-exercice">Exercer</button>
-                <button class="b-exercice">Imprimer</button>
-                <div class="b-code">
+                <button class="button-defi">Sauvegarder mon défi</button>
+                <button class="button-exercice button-exercer">Exercer</button>
+                <button class="button-exercice">Imprimer</button>
+                <div class="button-code">
                   <form action="" class="code">
                     <input
                       class="in-code"
@@ -182,7 +182,7 @@
                       placeholder="code à 8 chiffres"
                     />
                   </form>
-                  <a class="b-charger-defi">charger mon défi</a>
+                  <a class="button-charger-defi">charger mon défi</a>
                 </div>
               </div>
             </div>
@@ -190,19 +190,23 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <div class="exercer-hover">
-                  <img src="img/croix.png" alt="" />
-                  <div class="exercer-barre-charge">
-                    <p class="exercer-p">1/20</p>
-                    <p class="exercer-barre"></p>
-                  </div>
-                  <div class="exercer-text">
-                    <p class="exercer-verbe">tu / être / future (indicatif)</p>
-                    <div class="exercer-input">
-                      <form action="">
-                        <input type="number" />
-                      </form>
-                      <a class="exercer-button">Vérifier</a>
+                <div class="exercer-popup">
+                  <div class="exercer-bloc">
+                    <img class="exercer-img-croix" src="img/croix.png" alt="" />
+                    <div class="exercer-barre-charge">
+                      <p class="exercer-score">1/20</p>
+                      <p class="exercer-barre"></p>
+                    </div>
+                    <div class="exercer-text">
+                      <p class="exercer-verbe">
+                        tu / être / future (indicatif)
+                      </p>
+                      <div class="exercer-input">
+                        <form class="exercer-form" action="">
+                          <input type="text" />
+                        </form>
+                        <a class="exercer-button">Vérifier</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -218,7 +222,7 @@
               <div class="col-5">
                 <h2 class="l-htwo">Mes verbes</h2>
                 <div class="bloc l-bloc">
-                  <button class="b-action-dossier b-false">
+                  <button class="button-action-dossier button-false">
                     Tout supprimer
                   </button>
                   <form action="" class="verbe">
@@ -238,7 +242,7 @@
                   <form action="">
                     <div class="f-question question l-question">
                       <label for="">Nombre de question</label>
-                      <select class="b-select" name="country" id="country">
+                      <select class="button-select" name="number" id="">
                         <option value="CI">5</option>
                         <option value="DI">10</option>
                         <option value="VI">20</option>
@@ -249,21 +253,35 @@
                     </div>
                     <div>
                       <p
-                        class="b-group"
+                        class="button-group"
                         role="group"
                         aria-label="groupe temps options"
                       >
-                        <button type="button" class="b-secondary l-secondary">
+                        <button
+                          type="button"
+                          class="button-secondary l-secondary"
+                        >
                           normal
                         </button>
-                        <button type="button" class="b-secondary l-secondary">
+                        <button
+                          type="button"
+                          class="button-secondary l-secondary"
+                        >
                           trouver mode + temps
                         </button>
                       </p>
                     </div>
                     <div class="impression">
-                      <label for=""> Options d'impression </label>
-                      <input type="radio" name="" id="" />
+                      <label class="in-switch">
+                        Options d'impression
+                        <input
+                          class="in-button-switch-wrapper"
+                          type="checkbox"
+                        />
+                        <div class="in-switch-wrapper">
+                          <div class="in-switch-inner"></div>
+                        </div>
+                      </label>
                     </div>
                   </form>
                 </div>
@@ -277,11 +295,11 @@
               <div class="col-10 offset-1">
                 <h2 class="t-temps l-htwo">Mes temps</h2>
                 <div class="bloc l-bloc">
-                  <div class="f-b-temps">
-                    <button class="b-action-dossier b-right">
+                  <div class="f-button-temps">
+                    <button class="button-action-dossier button-right">
                       Tout cocher
                     </button>
-                    <button class="b-action-dossier b-false">
+                    <button class="button-action-dossier button-false">
                       Tout décocher
                     </button>
                   </div>
@@ -559,19 +577,23 @@
             <h4>Christophe Roulet</h4>
           </div>
           <div class="col-6">
-            <p>
+            <p class="text-christophe">
               Christophe Roulet, enseignant en français et professeur de motion
               design à Eikon, s'est lancé dans la quête du site idéal pour ses
-              cours, mais en vain. Conscient de l'importance d'un outil
+              cours, mais en vain. Conscient de l'importance d'un outilas
               pédagogique adapté, il a décidé de créer son propre site. Gratuit,
               sans publicité et conçu pour répondre aux besoins de ses élèves,
               ce site reflète son engagement envers l'éducation et l'innovation.
             </p>
           </div>
           <div class="col-12">
-            <div class="contact l-contact">
-              <p>contact</p>
-              <a href="">christophe.roulet@edu-vd.ch</a>
+            <div class="row">
+              <div class="col-6">
+                <p class="contact-titre">Contact:</p>
+              </div>
+              <div class="col-6">
+                <a class="contact-a" href="">christophe.roulet@edu-vd.ch</a>
+              </div>
             </div>
           </div>
         </div>

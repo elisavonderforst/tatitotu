@@ -1,8 +1,12 @@
 .bloc {
-  outline: 18px solid var(--bleu, #0f5fa6);
+  outline: 18px solid var(--bleu);
   outline-offset: -18px;
-  background: var(--maquette-1-White, #fff);
+  background: var(--white);
   box-shadow: 15px 10px 0px 0px var(--pink);
+}
+
+.bloc > form > input {
+  margin-top: 19px;
 }
 
 .contact {
@@ -16,21 +20,17 @@
 .impression {
   color: var(--bleu);
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
 }
 
 .text-temps {
   color: var(--bleu);
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 
 .cardrillage {
+  background-image: url(../img/cadrillage.png);
   padding: 60px;
   margin: 0 44px;
 }

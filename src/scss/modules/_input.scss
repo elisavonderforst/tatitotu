@@ -1,42 +1,37 @@
 .in-verbe,
 .in-code {
-  color: var(--maquette-1-green-80, rgba(54, 135, 52));
-  font-family: "Helvetica Neue";
+  color: var(--green-80);
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   background: white;
-  padding: 10px 24px;
+  padding: 12px 24px;
   border: none;
 }
 
 .in-verbe::placeholder,
 .in-code::placeholder {
-  color: var(--maquette-1-green-80, rgba(54, 135, 52, 0.6));
-  font-family: "Helvetica Neue";
+  color: var(--green-80);
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
 }
 
 select {
-  border: 2px solid var(--bleu, #0f5fa6);
-  background: var(--maquette-1-White, #fff);
+  border: 2px solid var(--bleu);
+  background: var(--white);
   padding: 10px 9px 10px 18px;
-  color: var(--bleu, #0f5fa6);
-  font-family: "Helvetica Neue";
+  color: var(--bleu);
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
   margin-left: 74px;
 }
 
 .in-verbe {
-  border: 4px solid var(--bleu, #0f5fa6);
+  border: 4px solid var(--bleu);
 }
 
 input[type="checkbox"] {
@@ -46,13 +41,17 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  border: 3px solid palevioletred;
+  border: 3px solid var(--pink);
   cursor: pointer;
 }
 
 input[type="checkbox"]:checked {
-  background-color: palevioletred;
+  background-color: var(--pink);
 }
 label {
   padding-right: 60px;
+}
+
+.in-b-switch-wrapper {
+  margin-left: 10px;
 }
